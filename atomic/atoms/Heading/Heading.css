@@ -1,0 +1,23 @@
+.heading {
+    line-height: 1.25;
+}
+
+.color-default {
+    color: var(--colors-black);
+}
+
+.color-primary {
+    color: var(--colors-primary);
+}
+
+.size-sm {
+    font-size: 46px;
+}
+
+.size-md {
+    font-size: 58px;
+}
+
+.size-lg {
+    font-size: 93px;
+}

@@ -1,0 +1,35 @@
+{
+    "name": "igloosuite-components",
+    "description": "A set of components for the igloosuite",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "andres-vizcaino",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@storybook/addon-actions": "^6.4.9",
+        "@storybook/addon-essentials": "^6.4.9",
+        "@storybook/addon-links": "^6.4.9",
+        "@storybook/react": "^6.4.9",
+        "@typescript-eslint/eslint-plugin": "^5.9.0",
+        "@typescript-eslint/parser": "^5.9.0",
+        "babel-loader": "^8.2.3",
+        "eslint": "^8.6.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.28.0",
+        "prettier": "^2.5.1",
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "scripts": {
+        "storybook": "start-storybook -p 6006 -s ./assets",
+        "lint": "eslint . --fix",
+        "build-storybook": "build-storybook",
+        "build-custom-properties": "tsc scripts/build-custom-properties.ts && node scripts/build-custom-properties.js"
+    }
+}
