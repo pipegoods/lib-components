@@ -20,7 +20,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "warn",
+    "prettier/prettier": "error",
     "arrow-body-style": "error",
     "prefer-arrow-callback": "error"
   }
