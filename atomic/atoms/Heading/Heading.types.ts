@@ -1,4 +1,4 @@
-export type Props = {
+export type HeadingProps = {
   /**
    * The text to display in the Heading.
    */

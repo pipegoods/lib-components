@@ -1,8 +1,12 @@
 import React from 'react'
-import { Props } from './Heading.types'
+import { HeadingProps } from './Heading.types'
 import './Heading.css'
 
-const Heading = ({ children, size = 'md', color = 'default' }: Props) => (
+const Heading = ({
+  children,
+  size = 'md',
+  color = 'default',
+}: HeadingProps) => (
   <h1 className={`heading size-${size} color-${color}`}>{children}</h1>
 )
 

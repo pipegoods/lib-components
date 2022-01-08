@@ -5,8 +5,9 @@ type TIconList = {
 }
 
 const iconMap: TIconList = {
-  rightArrow: 'right-arrow',
+  arrowRight: 'arrow-right',
   homeOutline: 'home-outline',
+  expandMore: 'expand-more',
 }
 
 export const mapType = (type: string) =>

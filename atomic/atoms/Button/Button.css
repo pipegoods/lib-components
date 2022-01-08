@@ -1,44 +1,44 @@
 .button {
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    transition: all 0.5s ease;
-    font-size: var(--font-size-2xl);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 300px;
-    min-width: max-content;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  font-size: var(--font-size-2xl);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-width: max-content;
 }
 
 .is-block {
-    width: 100%;
+  width: 100%;
 }
 
 .type-primary {
-    background-color: var(--colors-primary);
-    color: var(--colors-white);
+  background-color: var(--colors-primary);
+  color: var(--colors-white);
 }
 
 .button:hover {
-    filter: brightness(1.5);
+  filter: brightness(1.5);
 }
 
 .button:active {
-    filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 .type-secondary {
-    background-color: var(--colors-white);
-    color: var(--colors-primary);
-    border: 1px solid var(--colors-primary);
+  background-color: var(--colors-white);
+  color: var(--colors-primary);
+  border: 1px solid var(--colors-primary);
 }
 
 .type-tertiary {
-    background-color: var(--colors-transparent);
-    color: var(--colors-secundary);
-    box-shadow: var(--shadows-none);
-    padding: 0;
-    border-bottom: 1px solid var(--colors-secundary);
-    border-radius: var(--borderRadius-none);
+  background-color: var(--colors-transparent);
+  color: var(--colors-secundary);
+  box-shadow: var(--shadows-none);
+  padding: 0;
+  border-bottom: 1px solid var(--colors-secundary);
+  border-radius: var(--border-radius-none);
 }

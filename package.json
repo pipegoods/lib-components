@@ -30,6 +30,6 @@
         "storybook": "start-storybook -p 6006 -s ./assets",
         "lint": "eslint . --fix",
         "build-storybook": "build-storybook",
-        "build-custom-properties": "tsc scripts/build-custom-properties.ts && node scripts/build-custom-properties.js"
+        "build-custom-properties": "tsc scripts/build-tokens.ts && node scripts/build-tokens.js"
     }
 }

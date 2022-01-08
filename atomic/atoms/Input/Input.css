@@ -1,0 +1,11 @@
+/* input style material desing */
+.input {
+  border: 2px solid var(--colors-primary);
+  border-radius: var(--border-radius-md);
+  box-sizing: border-box;
+  padding: 16px 8px;
+}
+
+.input::placeholder {
+  color: var(--colors-font-highlight);
+}

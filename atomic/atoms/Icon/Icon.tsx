@@ -1,8 +1,8 @@
 import React from 'react'
-import { Props } from './Icon.types'
+import { IconProps } from './Icon.types'
 import { mapType } from './helpers'
 
-const Icon = ({ type }: Props) => (
+const Icon = ({ type }: IconProps) => (
   <div>
     <img src={mapType(type)} />
   </div>

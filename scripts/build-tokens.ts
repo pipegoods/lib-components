@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { choices, decisions } from '../tokens/tokens'
 
 // eslint-disable-next-line
@@ -25,7 +26,7 @@ const transformTokens = (parentKey: string, object: IObjectKeys): string => {
       const customProperty =
         parentKey !== ''
           ? `${parentKey}-${ToKebabCase(objectKey)}`
-          : `${objectKey}`
+          : `${ToKebabCase(objectKey)}`
       return `${tokensTransformed}${transformTokens(customProperty, value)}`
     }
 
@@ -42,7 +43,7 @@ const BuildTokens = (): void => {
 
   const data = `:root {${customProperties}}`
 
-  fs.writeFile('./tokens.css', data, 'utf8', (error: Error) => {
+  fs.writeFile('./styles/tokens.css', data, 'utf8', (error: Error) => {
     if (error) {
       return console.log(error)
     }

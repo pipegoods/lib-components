@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-export type Props = {
+export type ButtonProps = {
   /**
    * The text to display in the button.
    */

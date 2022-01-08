@@ -1,3 +1,3 @@
-export type Props = {
-  type: 'rightArrow' | 'homeOutline'
+export type IconProps = {
+  type: 'arrowRight' | 'homeOutline' | 'expandMore'
 }

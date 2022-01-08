@@ -1,5 +1,8 @@
+import { ButtonProps } from '@components/atoms/Button/Button.types'
+import { IconProps } from '@components/atoms/Icon/Icon.types'
+
 export type Props = {
   children?: React.ReactNode
-  type: 'primary' | 'secondary' | 'tertiary'
-  icon: 'rightArrow' | 'homeOutline'
+  type: ButtonProps['type']
+  icon: IconProps['type']
 }
