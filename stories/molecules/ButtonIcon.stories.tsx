@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof ButtonIcon> = (args) => (
 export const Default = Template.bind({})
 Default.args = {
   children: 'ButtonIcon',
-  icon: 'rightArrow',
+  icon: 'arrowRight',
 }

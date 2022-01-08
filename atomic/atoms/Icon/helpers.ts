@@ -12,7 +12,7 @@ const iconMap: TIconList = {
 
 const iconSize: TIconList = {
   sm: 15,
-  md: 20,
+  md: 26,
   lg: 30,
   xl: 40,
 }
