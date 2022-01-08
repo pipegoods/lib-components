@@ -11,7 +11,7 @@ const Template: ComponentStory<typeof Picture> = (args) => <Picture {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  src: 'https://via.placeholder.com/640',
+  src: 'https://placeimg.com/200/200/tech',
   alt: 'Placeholder',
-  width: 640,
+  width: 200,
 }

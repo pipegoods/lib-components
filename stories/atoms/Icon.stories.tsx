@@ -13,3 +13,9 @@ export const Default = Template.bind({})
 Default.args = {
   type: 'arrowRight',
 }
+
+export const HasBackground = Template.bind({})
+HasBackground.args = {
+  type: 'arrowRight',
+  hasBackground: true,
+}

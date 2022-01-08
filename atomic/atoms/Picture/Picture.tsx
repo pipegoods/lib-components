@@ -5,12 +5,7 @@ import { getWidth } from './helpers'
 
 const Picture = ({ width = '100%', src, alt }: PictureProps) => (
   <picture className="picture">
-    <img
-      width={width}
-      alt={alt}
-      src={src}
-      style={{ maxWidth: getWidth(width) }}
-    />
+    <img alt={alt} src={src} style={{ maxWidth: getWidth(width) }} />
   </picture>
 )
 
