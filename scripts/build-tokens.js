@@ -17,14 +17,22 @@ var transformTokens = function (parentKey, object) {
   var objectKeys = Object.keys(object)
   return objectKeys.reduce((tokensTransformed, objectKey) => {
     var value = object[objectKey]
-    if (isIObjectKeys(value)) {
-      var customProperty =
+    if (Array.isArray(value)) {
+      var customProperty = parentKey
+        ? ''.concat(parentKey, '-').concat(objectKey)
+        : ''.concat(objectKey)
+      return ''
+        .concat(tokensTransformed, '\n\t--')
+        .concat(ToKebabCase(customProperty), ' : ')
+        .concat(value.join(', '), ';')
+    } else if (isIObjectKeys(value)) {
+      var customPropertyO =
         parentKey !== ''
           ? ''.concat(parentKey, '-').concat(ToKebabCase(objectKey))
           : ''.concat(ToKebabCase(objectKey))
       return ''
         .concat(tokensTransformed)
-        .concat(transformTokens(customProperty, value))
+        .concat(transformTokens(customPropertyO, value))
     }
     return ''
       .concat(tokensTransformed, '\n        --')

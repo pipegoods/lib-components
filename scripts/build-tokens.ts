@@ -22,12 +22,20 @@ const transformTokens = (parentKey: string, object: IObjectKeys): string => {
   const objectKeys = Object.keys(object)
   return objectKeys.reduce((tokensTransformed, objectKey) => {
     const value: IObjectKeys | string | object = object[objectKey]
-    if (isIObjectKeys(value)) {
-      const customProperty =
+
+    if (Array.isArray(value)) {
+      const customProperty = parentKey
+        ? `${parentKey}-${objectKey}`
+        : `${objectKey}`
+      return `${tokensTransformed}\n\t--${ToKebabCase(
+        customProperty
+      )} : ${value.join(', ')};`
+    } else if (isIObjectKeys(value)) {
+      const customPropertyO =
         parentKey !== ''
           ? `${parentKey}-${ToKebabCase(objectKey)}`
           : `${ToKebabCase(objectKey)}`
-      return `${tokensTransformed}${transformTokens(customProperty, value)}`
+      return `${tokensTransformed}${transformTokens(customPropertyO, value)}`
     }
 
     return `${tokensTransformed}

@@ -1,11 +1,11 @@
 {
-    "name": "igloosuite-components",
-    "description": "A set of components for the igloosuite",
-    "version": "1.0.0",
+    "name": "@pipegoods/components",
+    "description": "A set of components for the pipegoods.com website",
+    "version": "0.1.0",
     "main": "index.js",
+    "types": "index.d.ts",
     "author": "andres-vizcaino",
     "license": "MIT",
-    "private": true,
     "devDependencies": {
         "@babel/core": "^7.16.5",
         "@storybook/addon-actions": "^6.4.9",

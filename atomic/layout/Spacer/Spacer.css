@@ -2,5 +2,9 @@
 }
 
 .spacer-visibly {
-  outline: 1px solid var(--colors-primary);
+  outline: 3px dotted var(--colors-primary);
+}
+
+.spacer-visibly:hover {
+  outline: 3px solid var(--colors-primary);
 }
