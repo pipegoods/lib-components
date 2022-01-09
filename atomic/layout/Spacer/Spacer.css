@@ -1,0 +1,6 @@
+.spacer {
+}
+
+.spacer-visibly {
+  outline: 1px solid var(--colors-primary);
+}

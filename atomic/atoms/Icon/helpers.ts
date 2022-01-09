@@ -1,23 +1,27 @@
 const ICONS_ASSETS_PATH = '/icons'
 
-type TIconList = {
-  [key: string]: string | number
+type TIconMap = {
+  [key: string]: string
 }
 
-const iconMap: TIconList = {
+type TIconSize = {
+  [key: string]: number
+}
+
+export const iconMap: TIconMap = {
   arrowRight: 'arrow-right',
   homeOutline: 'home-outline',
   expandMore: 'expand-more',
 }
 
-const iconSize: TIconList = {
+export const iconSize: TIconSize = {
   sm: 15,
   md: 26,
   lg: 30,
   xl: 40,
 }
 
-export const mapType = (type: string) =>
+export const mapType = (type: keyof typeof iconMap) =>
   `${ICONS_ASSETS_PATH}/${iconMap[type]}.svg`
 
-export const mapSize = (size: string) => iconSize[size]
+export const mapSize = (size: keyof typeof iconSize) => iconSize[size]

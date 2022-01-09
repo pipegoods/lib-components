@@ -1,5 +1,7 @@
+import { iconMap, iconSize } from './helpers'
+
 export type IconProps = {
-  type: 'arrowRight' | 'homeOutline' | 'expandMore'
-  size?: 'sm' | 'md' | 'lg' | 'xl'
+  type: keyof typeof iconMap
+  size?: keyof typeof iconSize
   hasBackground?: boolean
 }
