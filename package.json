@@ -1,7 +1,7 @@
 {
     "name": "@pipegoods/components",
     "description": "A set of components for the pipegoods.com website",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "main": "index.js",
     "types": "index.d.ts",
     "author": "andres-vizcaino",
