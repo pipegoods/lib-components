@@ -1,15 +1,13 @@
 // Atoms
-import Button from './atomic/atoms/Button'
-import Heading from './atomic/atoms/Heading'
-import Icon from './atomic/atoms/Icon'
-import Input from './atomic/atoms/Input'
-import Picture from './atomic/atoms/Picture'
+export { default as Button } from './atomic/atoms/Button'
+export { default as Heading } from './atomic/atoms/Heading'
+export { default as Icon } from './atomic/atoms/Icon'
+export { default as Input } from './atomic/atoms/Input'
+export { default as Picture } from './atomic/atoms/Picture'
 
 // Molecules
-import ButtonIcon from './atomic/molecules/ButtonIcon'
-import Dropdown from './atomic/molecules/Dropdown'
+export { default as ButtonIcon } from './atomic/molecules/ButtonIcon'
+export { default as Dropdown } from './atomic/molecules/Dropdown'
 
 // Layout
-import Spacer from './atomic/layout/Spacer'
-
-export { Button, Heading, Icon, Input, Picture, ButtonIcon, Dropdown, Spacer }
+export { default as Spacer } from './atomic/layout/Spacer'
