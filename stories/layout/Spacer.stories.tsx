@@ -17,24 +17,42 @@ const TemplateVertical: ComponentStory<typeof Spacer> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  size: '8',
+  size: 'lg',
 }
 
-export const Visibly = Template.bind({})
-Visibly.args = {
-  size: '8',
+export const extraSmall = Template.bind({})
+extraSmall.args = {
+  size: 'xs',
+  isVisibly: true,
+}
+
+export const small = Template.bind({})
+small.args = {
+  size: 'sm',
+  isVisibly: true,
+}
+
+export const medium = Template.bind({})
+medium.args = {
+  size: 'md',
+  isVisibly: true,
+}
+
+export const large = Template.bind({})
+large.args = {
+  size: 'lg',
   isVisibly: true,
 }
 
 export const Horizontal = TemplateHorizontal.bind({})
 Horizontal.args = {
-  size: '8',
+  size: 'lg',
   isVisibly: true,
 }
 
 export const Vertical = TemplateVertical.bind({})
 Vertical.args = {
-  size: '8',
+  size: 'lg',
   isVisibly: true,
   maxHeight: 200,
 }

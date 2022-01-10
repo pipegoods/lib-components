@@ -3,11 +3,11 @@
   display: inline-block;
 }
 
-.dropdown .icon {
+.dropdown :global(.dropdown-icon) {
   position: absolute;
+  top: 50%;
   right: 1px;
   pointer-events: none;
-  top: 50%;
   transform: translateY(-50%);
 }
 

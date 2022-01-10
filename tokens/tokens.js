@@ -127,8 +127,7 @@ exports.choices = {
         }
     },
     spacing: {
-        px: '1px',
-        '0': '0',
+        none: 0,
         xs: 5,
         sm: 15,
         md: 20,
@@ -150,23 +149,17 @@ exports.choices = {
     },
     fontFamily: {
         // serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
-        sans: ['Poppins', 'Arial', 'sans-serif']
+        sans: ['Poppins', 'Arial', 'sans-serif'],
+        mono: ["'Roboto Mono'", "'Courier New'", 'monospace']
     },
     fontSize: {
-        base: {
-            mobile: '16px',
-            desktop: '18px'
-        },
-        xs: '.75rem',
-        sm: '.875rem',
-        md: '1rem',
-        lg: '1.125rem',
-        xl: '1.25rem',
-        '2xl': '1.5rem',
-        '3xl': '1.875rem',
-        '4xl': '2.25rem',
-        '5xl': '3rem',
-        '6xl': '4rem'
+        base: '14px',
+        xs: '1.2rem',
+        sm: '1.4rem',
+        md: '1.6rem',
+        lg: '1.8rem',
+        xl: '2.2rem',
+        '2xl': '6rem'
     },
     fontWeight: {
         hairline: 100,
@@ -195,26 +188,10 @@ exports.choices = {
         wider: '.05em',
         widest: '.1em'
     },
-    // prettier-ignore
     shadows: {
-        outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
         none: 'none',
-        down: {
-            sm: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-            md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-            lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-            xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-            "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-            inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)"
-        },
-        up: {
-            sm: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06)",
-            md: "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06)",
-            lg: "0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05)",
-            xl: "0 -20px 25px -5px rgba(0, 0, 0, 0.1), 0 -10px 10px -5px rgba(0, 0, 0, 0.04)",
-            "2xl": "0 -25px 50px -12px rgba(0, 0, 0, 0.25)",
-            inner: "inset 0 -2px 4px 0 rgba(0, 0, 0, 0.06)"
-        }
+        xs: '0px 3px 6px rgba(0, 0, 0, 0.05)',
+        sm: '0px 4px 5px rgba(0, 0, 0, 0.07)'
     },
     minHeight: {
         '0': '0',
@@ -234,8 +211,9 @@ exports.choices = {
     },
     borderRadius: {
         none: '0',
-        sm: '0.125rem',
-        md: '0.25rem',
+        xs: '4px',
+        sm: '10px',
+        md: '20px',
         lg: '30px',
         full: '9999px'
     },
@@ -247,6 +225,11 @@ exports.choices = {
         '30': '30',
         '40': '40',
         '50': '50'
+    },
+    borderWidth: {
+        none: '0',
+        thin: '1px',
+        thick: '2px'
     }
 };
 exports.decisions = {

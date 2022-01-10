@@ -1,7 +1,7 @@
 /* input style material desing */
 .input {
   border: 2px solid var(--colors-primary);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-xs);
   box-sizing: border-box;
   padding: 16px 8px;
 }

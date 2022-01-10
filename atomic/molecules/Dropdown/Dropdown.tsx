@@ -5,7 +5,7 @@ import Icon from '../../atoms/Icon'
 
 const Dropdown = ({ value = '1', options, onChange }: DropdownProps) => (
   <div className={styles.dropdown}>
-    <Icon type="expandMore" hasBackground />
+    <Icon className="dropdown-icon" type="expandMore" hasBackground />
     <select
       className={styles['dropdown-select']}
       value={value}
