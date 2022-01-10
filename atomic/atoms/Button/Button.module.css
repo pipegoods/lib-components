@@ -1,12 +1,12 @@
 .button {
-  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
   border: 1px solid transparent;
   border-radius: var(--border-radius-sm);
   transition: all 0.5s ease;
   font-size: var(--font-size-md);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   max-width: 300px;
   min-width: max-content;
 }
@@ -41,4 +41,5 @@
   padding: 0;
   border-bottom: 1px solid var(--colors-secundary);
   border-radius: var(--border-radius-none);
+  max-width: max-content;
 }
