@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonProps } from './Button.types'
-import './Button.css'
+import styles from './Button.module.css'
 
 const Button = ({
   children,
@@ -8,8 +8,8 @@ const Button = ({
   isBlock = true,
 }: ButtonProps) => (
   <button
-    className={`button type-${type} ${
-      isBlock && type !== 'tertiary' && 'is-block'
+    className={`${styles.button} ${styles[`type-${type}`]} ${
+      isBlock && type !== 'tertiary' && styles[`is-block`]
     }`}
   >
     {children}

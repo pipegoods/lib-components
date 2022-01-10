@@ -1,13 +1,19 @@
 import React from 'react'
 import { HeadingProps } from './Heading.types'
-import './Heading.css'
+import styles from './Heading.module.css'
 
 const Heading = ({
   children,
   size = 'md',
   color = 'default',
 }: HeadingProps) => (
-  <h1 className={`heading size-${size} color-${color}`}>{children}</h1>
+  <h1
+    className={`${styles.heading} ${styles[`size-${size}`]} ${
+      styles[`color-${color}`]
+    }`}
+  >
+    {children}
+  </h1>
 )
 
 export default Heading

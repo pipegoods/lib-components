@@ -1,10 +1,10 @@
 import React from 'react'
 import { InputProps } from './Input.types'
-import './Input.css'
+import styles from './Input.module.css'
 
 const Input = ({ type, value, onChange, placeholder }: InputProps) => (
   <input
-    className="input"
+    className={styles.input}
     type={type}
     value={value}
     onChange={onChange}
