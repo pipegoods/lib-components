@@ -242,8 +242,14 @@ export const decisions = {
     fontMuted: choices.colors.brand.gray,
     fontHighlight: choices.colors.brand.gray,
   },
-  backgrounds: {
+  backgroundColor: {
     primary: choices.colors.brand.hintOfRed,
     highlight: choices.colors.brand.romance,
+  },
+  button: {
+    maxWidth: '300px',
+  },
+  input: {
+    height: '38px',
   },
 }

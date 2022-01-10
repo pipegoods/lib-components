@@ -4,13 +4,14 @@ import styles from './Heading.module.css'
 
 const Heading = ({
   children,
-  size = 'md',
+  size = 'base',
   color = 'default',
+  weight = 'normal',
 }: HeadingProps) => (
   <h1
     className={`${styles.heading} ${styles[`size-${size}`]} ${
       styles[`color-${color}`]
-    }`}
+    } ${styles[`weight-${weight}`]}`}
   >
     {children}
   </h1>

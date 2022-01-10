@@ -1,3 +1,5 @@
+import { choices } from 'tokens/tokens'
+
 export type HeadingProps = {
   /**
    * The text to display in the Heading.
@@ -7,7 +9,7 @@ export type HeadingProps = {
    * The size of the Heading.
    * @default "medium"
    */
-  size?: 'sm' | 'md' | 'lg'
+  size?: keyof typeof choices.fontSize
 
   /**
    * The color of the Heading.
@@ -16,4 +18,5 @@ export type HeadingProps = {
    * <Heading color="primary">Primary Heading</Heading>
    */
   color?: 'primary' | 'default'
+  weight?: 'bold' | 'normal'
 }

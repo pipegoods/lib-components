@@ -7,9 +7,10 @@
   border-radius: var(--border-radius-xs);
   transition: filter 0.5s ease, box-shadow 0.2s ease-in;
   box-shadow: var(--box-shadow-sm);
-  max-width: 300px;
+  max-width: var(--button-max-width);
   cursor: pointer;
   min-width: max-content;
+  height: var(--input-height);
 }
 
 .is-block {
@@ -43,4 +44,5 @@
   border-bottom: 1px solid var(--colors-secundary);
   border-radius: var(--border-radius-none);
   max-width: max-content;
+  height: auto;
 }

@@ -14,26 +14,24 @@ Default.args = {
   children: 'Texto por defecto',
 }
 
-export const Primary = Template.bind({})
-Primary.args = {
-  children: 'Texto primario',
-  color: 'primary',
-}
+export const Colors = () => (
+  <>
+    <Heading size="lg" color="default">
+      Texto por defecto
+    </Heading>
+    <Heading size="lg" color="primary">
+      Texto primario
+    </Heading>
+  </>
+)
 
-export const Small = Template.bind({})
-Small.args = {
-  children: 'Texto pequeño',
-  size: 'sm',
-}
-
-export const Medium = Template.bind({})
-Medium.args = {
-  children: 'Texto mediano',
-  size: 'md',
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  children: 'Texto grande',
-  size: 'lg',
-}
+export const Sizes = () => (
+  <>
+    <Heading>Texto base</Heading>
+    <Heading size="sm">Texto pequeño</Heading>
+    <Heading size="md">Texto mediano</Heading>
+    <Heading size="lg">Texto grande</Heading>
+    <Heading size="xl">Texto extra grande</Heading>
+    <Heading size="2xl">Texto extra extra grande</Heading>
+  </>
+)
