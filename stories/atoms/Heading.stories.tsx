@@ -16,7 +16,7 @@ Default.args = {
 export const Colors = () => (
   <>
     <Heading size="lg" color="default">
-      Texto por defecto
+      Texto por defecto en color default
     </Heading>
     <Heading size="lg" color="primary">
       Texto primario
