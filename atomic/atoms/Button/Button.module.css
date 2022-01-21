@@ -44,5 +44,5 @@
   border-bottom: 1px solid var(--colors-secundary);
   border-radius: var(--border-radius-none);
   max-width: max-content;
-  height: auto;
+  height: 25px;
 }
