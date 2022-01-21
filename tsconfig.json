@@ -19,6 +19,11 @@
       "@components/*": ["atomic/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "stories/storybook.test.js"
+  ],
   "exclude": ["node_modules"]
 }

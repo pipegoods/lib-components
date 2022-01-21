@@ -1,4 +1,3 @@
-import React from 'react'
 import { Props } from './ButtonIcon.types'
 import Button from '../../atoms/Button'
 import Icon from '../../atoms/Icon'

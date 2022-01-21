@@ -1,4 +1,3 @@
-import React from 'react'
 import { PictureProps } from './Picture.types'
 import styles from './Picture.module.css'
 import { getWidth } from './helpers'

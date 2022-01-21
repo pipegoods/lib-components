@@ -1,4 +1,4 @@
-import 'minireset.css/minireset.css'
+import 'minireset.css'
 import '../styles/tokens.css'
 import '../styles/globals.css'
 

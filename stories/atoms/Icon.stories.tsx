@@ -1,4 +1,3 @@
-import React from 'react'
 import Icon from '../../atomic/atoms/Icon'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 

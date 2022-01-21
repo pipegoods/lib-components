@@ -1,4 +1,3 @@
-import React from 'react'
 import { getSize } from './helpers'
 import { SpacerProps } from './Spacer.types'
 import styles from './Spacer.module.css'

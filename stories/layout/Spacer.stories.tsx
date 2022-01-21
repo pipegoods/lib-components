@@ -1,4 +1,3 @@
-import React from 'react'
 import Spacer from '../../atomic/layout/Spacer'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
@@ -20,26 +19,26 @@ Default.args = {
   size: 'lg',
 }
 
-export const extraSmall = Template.bind({})
-extraSmall.args = {
+export const ExtraSmall = Template.bind({})
+ExtraSmall.args = {
   size: 'xs',
   isVisibly: true,
 }
 
-export const small = Template.bind({})
-small.args = {
+export const Small = Template.bind({})
+Small.args = {
   size: 'sm',
   isVisibly: true,
 }
 
-export const medium = Template.bind({})
-medium.args = {
+export const Medium = Template.bind({})
+Medium.args = {
   size: 'md',
   isVisibly: true,
 }
 
-export const large = Template.bind({})
-large.args = {
+export const Large = Template.bind({})
+Large.args = {
   size: 'lg',
   isVisibly: true,
 }

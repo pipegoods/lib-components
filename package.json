@@ -7,22 +7,28 @@
     "author": "andres-vizcaino",
     "license": "MIT",
     "devDependencies": {
-        "@babel/core": "7.16.5",
-        "@storybook/addon-actions": "6.4.9",
-        "@storybook/addon-essentials": "6.4.9",
-        "@storybook/addon-links": "6.4.9",
-        "@storybook/react": "6.4.9",
-        "@typescript-eslint/eslint-plugin": "5.9.0",
-        "@typescript-eslint/parser": "5.9.0",
+        "@babel/core": "7.16.10",
+        "@babel/preset-env": "7.16.11",
+        "@babel/preset-react": "7.16.7",
+        "@babel/preset-typescript": "7.16.7",
+        "@storybook/addon-actions": "6.4.13",
+        "@storybook/addon-essentials": "6.4.13",
+        "@storybook/addon-links": "6.4.13",
+        "@storybook/addon-storyshots": "6.4.13",
+        "@storybook/react": "6.4.13",
+        "@typescript-eslint/eslint-plugin": "5.10.0",
+        "@typescript-eslint/parser": "5.10.0",
         "babel-loader": "8.2.3",
-        "eslint": "8.6.0",
+        "eslint": "8.7.0",
         "eslint-config-prettier": "8.3.0",
         "eslint-plugin-prettier": "4.0.0",
         "eslint-plugin-react": "7.28.0",
+        "eslint-plugin-storybook": "0.5.6",
+        "identity-obj-proxy": "3.0.0",
         "minireset.css": "0.0.7",
         "prettier": "2.5.1",
         "storybook-css-modules-preset": "1.1.1",
-        "typescript": "4.5.4"
+        "typescript": "4.5.5"
     },
     "dependencies": {
         "react": "17.0.2",
@@ -36,6 +42,7 @@
         "storybook": "start-storybook -p 6006 -s ./assets",
         "lint": "eslint . --fix",
         "build-storybook": "build-storybook",
-        "build:tokens": "tsc scripts/build-tokens.ts && node scripts/build-tokens.js"
+        "build:tokens": "tsc scripts/build-tokens.ts && node scripts/build-tokens.js",
+        "test": "jest"
     }
 }

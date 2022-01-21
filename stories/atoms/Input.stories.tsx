@@ -1,4 +1,3 @@
-import React from 'react'
 import Input from '../../atomic/atoms/Input'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 

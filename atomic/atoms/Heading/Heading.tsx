@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeadingProps } from './Heading.types'
 import styles from './Heading.module.css'
 

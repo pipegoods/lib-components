@@ -1,4 +1,3 @@
-import React from 'react'
 import { DropdownProps } from './Dropdown.types'
 import styles from './Dropdown.module.css'
 import Icon from '../../atoms/Icon'

@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconProps } from './Icon.types'
 import { mapSize, mapType } from './helpers'
 import Picture from '../Picture'
