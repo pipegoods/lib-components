@@ -42,7 +42,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 -s ./assets",
     "lint": "eslint . --fix",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s ./assets",
     "build:tokens": "tsc scripts/build-tokens.ts && node scripts/build-tokens.js",
     "test": "jest",
     "chromatic": "npx chromatic --project-token=b6460484f707"
