@@ -14,3 +14,11 @@ Default.args = {
   alt: 'Placeholder',
   width: 300,
 }
+
+export const Rounded = Template.bind({})
+Rounded.args = {
+  src: 'https://placeimg.com/600/600/people',
+  alt: 'Placeholder',
+  width: 300,
+  isRounded: true,
+}

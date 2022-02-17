@@ -5,3 +5,7 @@
   width: 100%;
   display: block;
 }
+
+.is-rounded img {
+  border-radius: var(--border-radius-full);
+}

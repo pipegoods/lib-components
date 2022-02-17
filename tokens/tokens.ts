@@ -153,7 +153,7 @@ export const choices = {
     mono: ["'Roboto Mono'", "'Courier New'", 'monospace'],
   },
   fontSize: {
-    base: '14px',
+    base: '10px',
     xs: '1.2rem',
     sm: '1.4rem',
     md: '1.6rem',

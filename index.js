@@ -4,6 +4,7 @@ export { default as Heading } from './atomic/atoms/Heading'
 export { default as Icon } from './atomic/atoms/Icon'
 export { default as Input } from './atomic/atoms/Input'
 export { default as Picture } from './atomic/atoms/Picture'
+export { default as Avatar } from './atomic/atoms/Avatar'
 
 // Molecules
 export { default as ButtonIcon } from './atomic/molecules/ButtonIcon'
